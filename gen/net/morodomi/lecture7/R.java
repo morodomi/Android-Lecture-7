@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package net.morodomi.lecture6;
+package net.morodomi.lecture7;
 
 public final class R {
     public static final class attr {
@@ -14,21 +14,16 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int result=0x7f050002;
-        public static final int start=0x7f050000;
-        public static final int time=0x7f050001;
+        public static final int bind=0x7f050001;
+        public static final int timepicker=0x7f050000;
+        public static final int unbind=0x7f050002;
     }
     public static final class layout {
         public static final int main=0x7f030000;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
-        public static final int end_time=0x7f040003;
-        public static final int finished=0x7f040005;
-        public static final int loading=0x7f040006;
-        public static final int ok=0x7f040007;
-        public static final int result=0x7f040004;
-        public static final int start=0x7f040001;
-        public static final int start_time=0x7f040002;
+        public static final int bind=0x7f040001;
+        public static final int unbind=0x7f040002;
     }
 }

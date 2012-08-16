@@ -3,8 +3,8 @@ Masahiro Morodomi &lt;morodomi at gmail.com&gt;
 
 ##Description
 
-Android Lecture 6 for Developers.
-In this Lecture, you will learn how to process http connection.
+Android Lecture 7 for Developers.
+In this Lecture, you will learn how to use Service.
 
 ##Requirements
  * Eclipse IDE for Java Developers
@@ -12,14 +12,12 @@ In this Lecture, you will learn how to process http connection.
  * Android 2.1 or higher
 
 ##Questions
- * Try different URL : http://search.twitter.com/search.atom?q=tokyo
- * Use JSON class to parse each post. Then display tweets using ListView.
- * Download binary image file and display it with ImageView. https://www.google.co.jp/images/srpr/logo3w.png
- * Use HttpURLConnection class instead of Apache HTTP Client.
+ * Change the broadcast intent continuously. (means fix the program to send intent periodically)
+ * Launch the Activity from the Service.
+ * Create a widget which displays current time.
+ * Change this app to a clock widget.
 
 ##References (Japanese)
- * http://y-anz-m.blogspot.jp/2011/10/androidapache-http-client.html
- * http://www.k5.dion.ne.jp/~ajima/android/Android_main_http.htm
 
 ##License
     Copyright (c) on 2012, Masahiro Morodomi
