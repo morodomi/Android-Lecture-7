@@ -64,7 +64,7 @@ public class ServiceActivity extends Activity {
 			public void onClick(View v) {
 				long hour = timePicker.getCurrentHour();
 				long min = timePicker.getCurrentMinute();
-				mTimerService.schedule((hour * 60 + min) * 60);
+				mTimerService.schedule((hour * 60 + min) * 60 * 1000);
 				moveTaskToBack(true);
 			}
 		});
