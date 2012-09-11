@@ -27,6 +27,9 @@ public class ServiceActivity extends Activity {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			Toast.makeText(getApplicationContext(), "Alarm Start", Toast.LENGTH_SHORT).show();
+			Intent it = new Intent(context, ServiceActivity.class);
+			it.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			context.startActivity(it);
 		}
 	}
 
@@ -64,7 +67,7 @@ public class ServiceActivity extends Activity {
 			public void onClick(View v) {
 				long hour = timePicker.getCurrentHour();
 				long min = timePicker.getCurrentMinute();
-				mTimerService.schedule((hour * 60 + min) * 60 * 1000);
+				mTimerService.schedule((hour * 60 + min) * 1000);
 				moveTaskToBack(true);
 			}
 		});
