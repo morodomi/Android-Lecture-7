@@ -53,7 +53,8 @@ public class TimerService extends Service {
 		return true;
 	}
 
-	public void schedule(long delay) {
+	public void schedule(final long delay) {
+		final int cycle = 5000;
 		if(mTimer != null) {
 			mTimer.cancel();
 		}
@@ -61,9 +62,11 @@ public class TimerService extends Service {
 		TimerTask timerTask = new TimerTask() {
 			@Override
 			public void run() {
-				sendBroadcast(new Intent(INTENT_ACTION));
+				Intent intent = new Intent(INTENT_ACTION);
+				intent.putExtra("delay", delay - cycle);
+				sendBroadcast(intent);
 			}
 		};
-		mTimer.schedule(timerTask, delay);
+		mTimer.schedule(timerTask, cycle);
 	}
 }

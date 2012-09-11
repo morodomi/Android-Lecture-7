@@ -26,7 +26,9 @@ public class ServiceActivity extends Activity {
 		/** called this method from service */
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			Toast.makeText(getApplicationContext(), "Alarm Start", Toast.LENGTH_SHORT).show();
+			long delay = intent.getExtras().getLong("delay");
+			Toast.makeText(getApplicationContext(), "Alarm:" + delay, Toast.LENGTH_SHORT).show();
+			mTimerService.schedule(delay);
 		}
 	}
 
