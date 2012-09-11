@@ -17,7 +17,8 @@ In this Lecture, you will learn how to use Service.
  * Create a widget which displays current time.
  * Change this app to a clock widget.
 
-##References (Japanese)
+##Presentation Slides (Japanese)
+http://dl.dropbox.com/u/54119179/Android/android-lecture-7.html
 
 ##License
     Copyright (c) on 2012, Masahiro Morodomi
